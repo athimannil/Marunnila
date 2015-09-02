@@ -6,11 +6,11 @@ angular.module('starter.services', [])
   // Some fake testing data
   var chats = [{
     id: 0,
-    name: 'mint',
+    name: 'തുളസി',
     lastText: 'You on your way?',
     face: 'img/mint/01.jpg',
     slides: ['01', '02', '03', '04']
-  }, {
+  }/*, {
     id: 1,
     name: 'Max Lynx',
     lastText: 'Hey, it\'s me',
@@ -30,7 +30,7 @@ angular.module('starter.services', [])
     name: 'Mike Harrington',
     lastText: 'This is wicked good ice cream.',
     face: 'https://pbs.twimg.com/profile_images/578237281384841216/R3ae1n61.png'
-  }];
+  }*/];
 
   return {
     all: function() {
