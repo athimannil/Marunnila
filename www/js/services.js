@@ -1,48 +1,68 @@
 angular.module('starter.services', [])
 
-.factory('Chats', function() {
+.factory('leafs', function() {
   // Might use a resource here that returns a JSON array
 
   // Some fake testing data
-  var chats = [{
-    id: 0,
-    name: 'തുളസി',
-    lastText: 'You on your way?',
-    face: 'img/mint/01.jpg',
-    slides: ['01', '02', '03', '04']
-  }/*, {
-    id: 1,
-    name: 'Max Lynx',
-    lastText: 'Hey, it\'s me',
-    face: 'https://avatars3.githubusercontent.com/u/11214?v=3&s=460'
-  }, {
-    id: 2,
-    name: 'Adam Bradleyson',
-    lastText: 'I should buy a boat',
-    face: 'https://pbs.twimg.com/profile_images/479090794058379264/84TKj_qa.jpeg'
-  }, {
-    id: 3,
-    name: 'Perry Governor',
-    lastText: 'Look at my mukluks!',
-    face: 'https://pbs.twimg.com/profile_images/598205061232103424/3j5HUXMY.png'
-  }, {
-    id: 4,
-    name: 'Mike Harrington',
-    lastText: 'This is wicked good ice cream.',
-    face: 'https://pbs.twimg.com/profile_images/578237281384841216/R3ae1n61.png'
-  }*/];
+  var leafs = [
+    {
+      id: 0,
+      name: 'തുളസി',
+      lastText: 'You on your way?',
+      other_names: ['other name 01', 'other name 02', 'other name 03', 'other name 04', 'other name 05', 'other name 06'],
+      face: 'img/mint/01.jpg',
+      slides: ['01', '02', '03', '04']
+    }, {
+      id: 0,
+      name: 'തുളസി',
+      lastText: 'You on your way?',
+      other_names: ['other name 01', 'other name 02', 'other name 03', 'other name 04', 'other name 05', 'other name 06'],
+      face: 'img/mint/01.jpg',
+      slides: ['01', '02', '03', '04']
+    }, {
+      id: 0,
+      name: 'തുളസി',
+      en_name:'mint',
+      lastText: 'You on your way?',
+      other_names: ['other name 01', 'other name 02', 'other name 03', 'other name 04', 'other name 05', 'other name 06'],
+      face: 'img/mint/01.jpg',
+      slides: ['01', '02', '03', '04']
+    }, {
+      id: 0,
+      name: 'തുളസി',
+      lastText: 'You on your way?',
+      other_names: ['other name 01', 'other name 02', 'other name 03', 'other name 04', 'other name 05', 'other name 06'],
+      face: 'img/mint/01.jpg',
+      slides: ['01', '02', '03', '04']
+    }, {
+      id: 0,
+      name: 'തുളസി',
+      lastText: 'You on your way?',
+      other_names: ['other name 01', 'other name 02', 'other name 03', 'other name 04', 'other name 05', 'other name 06'],
+      face: 'img/mint/01.jpg',
+      slides: ['01', '02', '03', '04']
+    }, {
+      id: 0,
+      name: 'തുളസി',
+      lastText: 'You on your way?',
+      other_names: ['other name 01', 'other name 02', 'other name 03', 'other name 04', 'other name 05', 'other name 06'],
+      face: 'img/mint/01.jpg',
+      slides: ['01', '02', '03', '04']
+    }
+  ];
+
 
   return {
     all: function() {
-      return chats;
+      return leafs;
     },
-    remove: function(chat) {
-      chats.splice(chats.indexOf(chat), 1);
+    remove: function(leaf) {
+      leafs.splice(leafs.indexOf(leaf), 1);
     },
-    get: function(chatId) {
-      for (var i = 0; i < chats.length; i++) {
-        if (chats[i].id === parseInt(chatId)) {
-          return chats[i];
+    get: function(leafId) {
+      for (var i = 0; i < leafs.length; i++) {
+        if (leafs[i].id === parseInt(leafId)) {
+          return leafs[i];
         }
       }
       return null;

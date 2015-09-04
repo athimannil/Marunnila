@@ -1,0 +1,24 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="{{leaf.name}}">
+  <ion-content class="padding">
+    <!-- <img ng-src="{{leaf.face}}" style="width: 64px; height: 64px"> -->
+    <!-- <p>{{leaf.lastText}}</p> -->
+    <!-- <pre>{{leaf.slides | json}}</pre> -->
+
+    <ion-slide-box does-continue="true">
+      <ion-slide ng-repeat="slide in leaf.slides">
+        <img src="./img/mint/{{slide}}.jpg" alt="{{leaf.name}}">
+      </ion-slide>
+    </ion-slide-box>
+    <h4>Other names:</h4>
+    <ul>
+      <li ng-repeat="name in leaf.other_names">{{name}}</li>
+    </ul>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,28 @@
+<ion-view view-title="Donate">
+  <ion-content>
+
+	<div class="item item-divider">
+	    Select language
+	</div>
+	<label class="item item-radio">
+		<input type="radio" name="language">
+		<div class="item-content">Malayalam</div>
+		<i class="radio-icon ion-checkmark"></i>
+	</label>
+	<label class="item item-radio">
+		<input type="radio" name="language">
+		<div class="item-content">English</div>
+		<i class="radio-icon ion-checkmark"></i>
+	</label>
+
+	<div class="item item-divider">
+	    Select language
+	</div>
+    <ion-list>
+	    <ion-toggle  ng-model="settings.enableFriends">
+	        Enable Friends
+	    </ion-toggle>
+    </ion-list>
+
+  </ion-content>
+</ion-view>
