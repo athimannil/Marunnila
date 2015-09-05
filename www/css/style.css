@@ -2,3 +2,6 @@
 .slider-slide{
 	text-align: center;
 }
+.slider-slide img{
+	width: 100%;
+}
