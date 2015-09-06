@@ -15,9 +15,12 @@
         <img src="./img/mint/{{slide}}.jpg" alt="{{leaf.name}}">
       </ion-slide>
     </ion-slide-box>
+
+    <h3 class="text-center mian-name">{{leaf.other_names[0]}}</h3>
+    <!-- Other names -->
     <h4 class="padding-left">Other names:</h4>
     <ul class="padding-left">
-      <li ng-repeat="name in leaf.other_names">{{name}}</li>
+      <li ng-repeat="name in leaf.other_names" ng-if="!$first">{{name}}</li>
     </ul>
 
   </ion-content>

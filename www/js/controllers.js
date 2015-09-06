@@ -1,6 +1,11 @@
 angular.module('starter.controllers', [])
 
-.controller('aboutCtrl', function($scope) {})
+.controller('homeCtrl', function($scope) {
+  $scope.myLanguage = "ml";
+})
+
+.controller('aboutCtrl', function($scope) {
+})
 
 .controller('leafsCtrl', function($scope, leafs) {
   // With the new view caching in Ionic, Controllers are only called
@@ -23,6 +28,10 @@ angular.module('starter.controllers', [])
 
 .controller('donateCtrl', function($scope) {
   $scope.settings = {
-    enableFriends: true
+    enableFriends: true,
+    languages: [
+      { name: 'Malayalam', value: 'ml'},
+      { name: 'English', value: 'en'}
+    ]
   };
 });

@@ -1,5 +1,13 @@
 <ion-view view-title="Account">
   <ion-content>
+
+	<ion-radio ng-repeat="language in settings.languages"
+		ng-value="language.value"
+        ng-model="data.clientSide">
+        	{{ language.name }}
+	</ion-radio>
+
+
     <ion-list>
 	    <ion-toggle  ng-model="settings.enableFriends">
 	        Enable Friends
