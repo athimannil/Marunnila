@@ -93,6 +93,38 @@ angular.module('starter.services', [])
       ml_names: ['തൊട്ടാവാടി'],
       ml_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere doloribus maiores quod recusandae laborum odit cum, dignissimos possimus aliquid id veniam tempore autem dolores ullam voluptas! Saepe aut iure pariatur!',
       slides: ['01.jpg', '02.jpg', '03.jpg']
+    }, {
+      id: 11,
+      botanical_name: 'ocimum americanum',
+      en_names: ['hoary basil'],
+      en_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere doloribus maiores quod recusandae laborum odit cum, dignissimos possimus aliquid id veniam tempore autem dolores ullam voluptas! Saepe aut iure pariatur!',
+      ml_names: ['കാട്ടു തുളസി'],
+      ml_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere doloribus maiores quod recusandae laborum odit cum, dignissimos possimus aliquid id veniam tempore autem dolores ullam voluptas! Saepe aut iure pariatur!',
+      slides: ['01.jpg', '02.jpg', '03.jpg']
+    }, {
+      id: 12,
+      botanical_name: 'coffea arabica',
+      en_names: ['coffee tree'],
+      en_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere doloribus maiores quod recusandae laborum odit cum, dignissimos possimus aliquid id veniam tempore autem dolores ullam voluptas! Saepe aut iure pariatur!',
+      ml_names: ['കാപ്പി'],
+      ml_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere doloribus maiores quod recusandae laborum odit cum, dignissimos possimus aliquid id veniam tempore autem dolores ullam voluptas! Saepe aut iure pariatur!',
+      slides: ['01.jpg', '02.jpg']
+    }, {
+      id: 13,
+      botanical_name: 'murraya koenigii',
+      en_names: ['curry leaf'],
+      en_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere doloribus maiores quod recusandae laborum odit cum, dignissimos possimus aliquid id veniam tempore autem dolores ullam voluptas! Saepe aut iure pariatur!',
+      ml_names: ['കറിവേപ്പ്'],
+      ml_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere doloribus maiores quod recusandae laborum odit cum, dignissimos possimus aliquid id veniam tempore autem dolores ullam voluptas! Saepe aut iure pariatur!',
+      slides: ['01.jpg', '02.jpg', '03.jpg']
+    }, {
+      id: 14,
+      botanical_name: 'cassia fistula',
+      en_names: ['purging fistula'],
+      en_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere doloribus maiores quod recusandae laborum odit cum, dignissimos possimus aliquid id veniam tempore autem dolores ullam voluptas! Saepe aut iure pariatur!',
+      ml_names: ['കണിക്കൊന്ന'],
+      ml_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere doloribus maiores quod recusandae laborum odit cum, dignissimos possimus aliquid id veniam tempore autem dolores ullam voluptas! Saepe aut iure pariatur!',
+      slides: ['01.jpg', '02.jpg']
     }
   ];
 
