@@ -4,7 +4,7 @@
   The FriendsCtrl pulls data from the Friends service (service.js)
   The Friends service returns an array of friend data
 -->
-<ion-view view-title="{{leaf.name}}">
+<ion-view view-title="{{leaf.ml_names[0]}}">
   <ion-content class="padding">
     <!-- <img ng-src="{{leaf.face}}" style="width: 64px; height: 64px"> -->
     <!-- <p>{{leaf.description}}</p> -->
@@ -12,7 +12,7 @@
 
     <ion-slide-box does-continue="true">
       <ion-slide ng-repeat="slide in leaf.slides">
-        <img src="./img/{{leaf.name}}/{{slide}}" alt="{{leaf.name}}">
+        <img src="./img/{{leaf.botanical_name}}/{{slide}}" alt="{{leaf.name}}">
       </ion-slide>
     </ion-slide-box>
 
