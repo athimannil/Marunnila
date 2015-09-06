@@ -10,7 +10,7 @@
 
     <ion-list>
       <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="leaf in leafs | filter:maanu" type="item-text-wrap" href="#/tab/leafs/{{leaf.id}}">
-        <img ng-src="{{leaf.other_names[0]}}">
+        <img ng-src="img/{{leaf.name}}/{{leaf.slides[0]}}">
         <h2 class="padding">{{leaf.name}}</h2>
         <!-- <p>{{leaf.description}}</p> -->
         <i class="icon ion-chevron-right icon-accessory"></i>

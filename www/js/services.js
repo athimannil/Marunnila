@@ -7,47 +7,25 @@ angular.module('starter.services', [])
   var leafs = [
     {
       id: 0,
-      name: 'Aloe',
+      name: 'aloe',
       description: 'You on your way?',
       other_names: ['കറ്റാര്‍ വാഴ'],
       face: 'img/aloe/01.jpg',
-      slides: ['01', '02', '03', '04']
+      slides: ['01.jpg', '02.jpg', '03.jpg', '04.jpg']
     }, {
-      id: 0,
-      name: 'തുളസി',
+      id: 1,
+      name: 'mint',
       description: 'You on your way?',
-      other_names: ['other name 01', 'other name 02', 'other name 03', 'other name 04', 'other name 05', 'other name 06'],
+      other_names: ['തുളസി'],
       face: 'img/mint/01.jpg',
-      slides: ['01', '02', '03', '04']
+      slides: ['01.jpg', '02.jpg', '03.jpg']
     }, {
-      id: 0,
-      name: 'തുളസി',
-      en_name:'mint',
+      id: 2,
+      name: 'scoparia dulcis',
       description: 'You on your way?',
-      other_names: ['other name 01', 'other name 02', 'other name 03', 'other name 04', 'other name 05', 'other name 06'],
-      face: 'img/mint/01.jpg',
-      slides: ['01', '02', '03', '04']
-    }, {
-      id: 0,
-      name: 'തുളസി',
-      description: 'You on your way?',
-      other_names: ['other name 01', 'other name 02', 'other name 03', 'other name 04', 'other name 05', 'other name 06'],
-      face: 'img/mint/01.jpg',
-      slides: ['01', '02', '03', '04']
-    }, {
-      id: 0,
-      name: 'തുളസി',
-      description: 'You on your way?',
-      other_names: ['other name 01', 'other name 02', 'other name 03', 'other name 04', 'other name 05', 'other name 06'],
-      face: 'img/mint/01.jpg',
-      slides: ['01', '02', '03', '04']
-    }, {
-      id: 0,
-      name: 'kooy',
-      description: 'You on your way?',
-      other_names: ['other name 01', 'other name 02', 'other name 03', 'other name 04', 'other name 05', 'other name 06'],
-      face: 'img/mint/01.jpg',
-      slides: ['01', '02', '03', '04']
+      other_names: ['കല്ലുരുക്കി'],
+      face: 'img/scoparia dulcis/01.jpg',
+      slides: ['01.jpg', '02.jpg', '03.jpg']
     }
   ];
 
