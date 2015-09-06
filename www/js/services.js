@@ -8,14 +8,14 @@ angular.module('starter.services', [])
     {
       id: 0,
       name: 'Aloe',
-      lastText: 'You on your way?',
+      description: 'You on your way?',
       other_names: ['കറ്റാര്‍ വാഴ'],
       face: 'img/aloe/01.jpg',
       slides: ['01', '02', '03', '04']
     }, {
       id: 0,
       name: 'തുളസി',
-      lastText: 'You on your way?',
+      description: 'You on your way?',
       other_names: ['other name 01', 'other name 02', 'other name 03', 'other name 04', 'other name 05', 'other name 06'],
       face: 'img/mint/01.jpg',
       slides: ['01', '02', '03', '04']
@@ -23,28 +23,28 @@ angular.module('starter.services', [])
       id: 0,
       name: 'തുളസി',
       en_name:'mint',
-      lastText: 'You on your way?',
+      description: 'You on your way?',
       other_names: ['other name 01', 'other name 02', 'other name 03', 'other name 04', 'other name 05', 'other name 06'],
       face: 'img/mint/01.jpg',
       slides: ['01', '02', '03', '04']
     }, {
       id: 0,
       name: 'തുളസി',
-      lastText: 'You on your way?',
+      description: 'You on your way?',
       other_names: ['other name 01', 'other name 02', 'other name 03', 'other name 04', 'other name 05', 'other name 06'],
       face: 'img/mint/01.jpg',
       slides: ['01', '02', '03', '04']
     }, {
       id: 0,
       name: 'തുളസി',
-      lastText: 'You on your way?',
+      description: 'You on your way?',
       other_names: ['other name 01', 'other name 02', 'other name 03', 'other name 04', 'other name 05', 'other name 06'],
       face: 'img/mint/01.jpg',
       slides: ['01', '02', '03', '04']
     }, {
       id: 0,
       name: 'kooy',
-      lastText: 'You on your way?',
+      description: 'You on your way?',
       other_names: ['other name 01', 'other name 02', 'other name 03', 'other name 04', 'other name 05', 'other name 06'],
       face: 'img/mint/01.jpg',
       slides: ['01', '02', '03', '04']
