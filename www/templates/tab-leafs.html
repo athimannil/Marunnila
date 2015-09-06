@@ -4,14 +4,14 @@
 <div class="bar bar-header item-input-inset">
   <label class="item-input-wrapper">
     <i class="icon ion-ios-search placeholder-icon"></i>
-    <input type="search" placeholder="Search" ng-model="maanu">
+    <input type="search" placeholder="Search" ng-model="filterName">
   </label>
 </div>
 
     <ion-list>
       <ion-item 
         class="item-remove-animate item-avatar item-icon-right" 
-        ng-repeat="leaf in leafs | orderBy: '-id'" 
+        ng-repeat="leaf in leafs | orderBy: '-id' | filter: filterName" 
         type="item-text-wrap" 
         href="#/tab/leafs/{{leaf.id}}"
       >

@@ -24,9 +24,9 @@ angular.module('starter.services', [])
     }, {
       id: 2,
       botanical_name: 'scoparia dulcis',
-      en_names: 'scoparia dulcis',
+      en_names: ['green chirayta', 'creat', 'king of bitters', 'andrographis', 'india echinacea'],
       en_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eos expedita officiis earum dolore hic modi, porro non excepturi debitis quis illum aperiam eum facilis aspernatur, eaque, reiciendis, tempore iure.',
-      ml_names: ['കല്ലുരുക്കി'],
+      ml_names: ['കല്ലുരുക്കി', 'മീനാംഗണി', 'സന്യാസിപ്പച്ച', 'ഋഷിഭക്ഷ'],
       ml_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eos expedita officiis earum dolore hic modi, porro non excepturi debitis quis illum aperiam eum facilis aspernatur, eaque, reiciendis, tempore iure.',
       slides: ['01.jpg', '02.jpg', '03.jpg']
     }, {
@@ -123,6 +123,30 @@ angular.module('starter.services', [])
       en_names: ['purging fistula'],
       en_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere doloribus maiores quod recusandae laborum odit cum, dignissimos possimus aliquid id veniam tempore autem dolores ullam voluptas! Saepe aut iure pariatur!',
       ml_names: ['കണിക്കൊന്ന'],
+      ml_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere doloribus maiores quod recusandae laborum odit cum, dignissimos possimus aliquid id veniam tempore autem dolores ullam voluptas! Saepe aut iure pariatur!',
+      slides: ['01.jpg', '02.jpg']
+    }, {
+      id: 15,
+      botanical_name: 'acorus calamus',
+      en_names: ['sweet flag', 'beewort', 'bitter pepper root', 'calamus root', 'flag root', 'gladdon', 'myrtle flag', 'myrtle grass', 'myrtle root', 'myrtle sedge', 'pine root', 'rat root', 'sea sedge', 'sweet cane', 'sweet cinnamon', 'sweet grass', 'sweet myrtle', 'sweet root', 'sweet rush', 'sweet sedge'],
+      en_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere doloribus maiores quod recusandae laborum odit cum, dignissimos possimus aliquid id veniam tempore autem dolores ullam voluptas! Saepe aut iure pariatur!',
+      ml_names: ['വയന്പ്'],
+      ml_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere doloribus maiores quod recusandae laborum odit cum, dignissimos possimus aliquid id veniam tempore autem dolores ullam voluptas! Saepe aut iure pariatur!',
+      slides: ['01.jpg', '02.jpg', '03.jpg']
+    }, {
+      id: 16,
+      botanical_name: 'tragia involucrata',
+      en_names: ['stinging nettle', 'indian stinging nettle', 'climbing nettle', 'canchorie root-plant'],
+      en_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere doloribus maiores quod recusandae laborum odit cum, dignissimos possimus aliquid id veniam tempore autem dolores ullam voluptas! Saepe aut iure pariatur!',
+      ml_names: ['കൊടിത്തൂവ', 'കൊടുത്ത', 'ചൊറിയണം', 'കൊടിത്തുന്പ'],
+      ml_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere doloribus maiores quod recusandae laborum odit cum, dignissimos possimus aliquid id veniam tempore autem dolores ullam voluptas! Saepe aut iure pariatur!',
+      slides: ['01.jpg', '02.jpg']
+    }, {
+      id: 17,
+      botanical_name: 'andrographis paniculata',
+      en_names: ['green chirayta', 'creat', 'king of bitters', 'andrographis', 'india echinacea'],
+      en_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere doloribus maiores quod recusandae laborum odit cum, dignissimos possimus aliquid id veniam tempore autem dolores ullam voluptas! Saepe aut iure pariatur!',
+      ml_names: ['കിരിയാത്ത്', 'നിലവേപ്പ്'],
       ml_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere doloribus maiores quod recusandae laborum odit cum, dignissimos possimus aliquid id veniam tempore autem dolores ullam voluptas! Saepe aut iure pariatur!',
       slides: ['01.jpg', '02.jpg']
     }
