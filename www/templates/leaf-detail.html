@@ -6,9 +6,6 @@
 -->
 <ion-view view-title="{{leaf.ml_names[0]}}">
   <ion-content class="padding">
-    <!-- <img ng-src="{{leaf.face}}" style="width: 64px; height: 64px"> -->
-    <!-- <p>{{leaf.description}}</p> -->
-    <!-- <pre>{{leaf.slides | json}}</pre> -->
 
     <ion-slide-box does-continue="true">
       <ion-slide ng-repeat="slide in leaf.slides">
@@ -16,12 +13,33 @@
       </ion-slide>
     </ion-slide-box>
 
-    <h3 class="text-center mian-name">{{leaf.other_names[0]}}</h3>
-    <!-- Other names -->
-    <h4 class="padding-left">Other names:</h4>
-    <ul class="padding-left">
-      <li ng-repeat="name in leaf.other_names" ng-if="!$first">{{name}}</li>
-    </ul>
+    <div class="card">
+      <div class="item item-text-wrap">
+        <h2 class="list-title">മറ്റ് പേരുകൾ</h2>
+        <hr>
+        <span ng-repeat="mlName in leaf.ml_names" ng-if="!$first">
+        {{mlName}}, 
+        </span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="item item-text-wrap">
+        <h2 class="list-title">ശാസ്ത്രീയ നാമം</h2>
+        <hr>
+        {{leaf.botanical_name}}
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="item item-text-wrap">
+        <h2 class="list-title">ഇംഗ്ലീഷ് പേരുകൾ</h2>
+        <hr>
+        <span ng-repeat="enName in leaf.en_names">
+        {{enName}}, 
+        </span>
+      </div>
+    </div>
 
   </ion-content>
 </ion-view>

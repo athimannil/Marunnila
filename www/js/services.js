@@ -8,7 +8,7 @@ angular.module('starter.services', [])
     {
       id: 0,
       botanical_name: 'aloe vera',
-      en_names: 'aloe',
+      en_names: ['aloe'],
       en_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus dignissimos eligendi vero quibusdam, nam repellat ut harum molestiae iste voluptate nisi itaque accusantium veritatis placeat cumque! Saepe distinctio natus, accusantium.',
       ml_names: ['കറ്റാര്‍ വാഴ'],
       ml_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus dignissimos eligendi vero quibusdam, nam repellat ut harum molestiae iste voluptate nisi itaque accusantium veritatis placeat cumque! Saepe distinctio natus, accusantium.',
@@ -16,7 +16,7 @@ angular.module('starter.services', [])
     }, {
       id: 1,
       botanical_name: 'ocimum tenuiflorum',
-      en_names: 'mint',
+      en_names: ['mint'],
       en_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae doloremque expedita sapiente enim quam ducimus dolorum sint, perferendis eaque pariatur eveniet aperiam, rem a, labore ab est reiciendis architecto error.',
       ml_names: ['തുളസി'],
       ml_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae doloremque expedita sapiente enim quam ducimus dolorum sint, perferendis eaque pariatur eveniet aperiam, rem a, labore ab est reiciendis architecto error.',
