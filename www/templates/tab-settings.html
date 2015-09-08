@@ -1,12 +1,12 @@
 <ion-view view-title="Account">
   <ion-content>
 
+	<div class="item item-divider">Select language</div>
 	<ion-radio ng-repeat="language in settings.languages"
 		ng-value="language.value"
-        ng-model="data.clientSide">
+        ng-model="myLanguage">
         	{{ language.name }}
 	</ion-radio>
-
 
     <ion-list>
 	    <ion-toggle  ng-model="settings.enableFriends">

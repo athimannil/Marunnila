@@ -1,31 +1,25 @@
 <ion-view view-title="Donate">
   <ion-content>
-	<div class="item item-divider">Select language</div>
-	<ion-radio ng-repeat="language in settings.languages"
-		ng-value="language.value"
-        ng-model="myLanguage">
-        	{{ language.name }}
-	</ion-radio>
+  	<div class="padding">
+		<h4>Donate to myLeaf</h4>
+		<p>myLeaf is - and will always be - free. Our mission is to provide users with tools that allow them to gain control over their Internet browsing and protect them from unwanted and malicious elements. Your donation directly helps the development of myLeaf.</p>
+		<p>Please use and enjoy it, and if you can make a donation of any amount, I'd appreciate it immensely</p>
 
-	<div class="item item-divider">
-	    Select language
-	</div>
-	<label class="item item-radio">
-		<input type="radio" name="language">
-		<div class="item-content">Malayalam</div>
-		<i class="radio-icon ion-checkmark"></i>
-	</label>
-	<label class="item item-radio">
-		<input type="radio" name="language">
-		<div class="item-content">English</div>
-		<i class="radio-icon ion-checkmark"></i>
-	</label>
+		<div class="list">
+			<div class="item item-divider">Contact me to contribute</div>
+			<a class="item item-icon-left" href="#">
+				<i class="icon ion-ios-email-outline"></i>
+				hello@athimannil.com
+			</a>
 
-    <ion-list>
-	    <ion-toggle  ng-model="settings.enableFriends">
-	        Enable Friends
-	    </ion-toggle>
-    </ion-list>
+			<a class="item item-icon-left item-icon-right" href="#">
+				<i class="icon ion-social-whatsapp-outline"></i>
+				+91 9895 319991
+				<i class="icon ion-ios-telephone-outline"></i>
+			</a>
+		</div>
 
+
+  	</div>
   </ion-content>
 </ion-view>
