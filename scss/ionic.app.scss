@@ -14,6 +14,7 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
+$positive: #7AC143;
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
@@ -21,5 +22,21 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
-$primary-color: #7AC143;
-$secondary-color: #E5E5E5;
+
+.slider-slide{
+	text-align: center;
+	img{
+		width: 100%;
+	}
+}
+.mian-name{
+	margin-top: 0;
+}
+h2.list-title{
+	color: #BABABA;
+	font-weight: 600;
+}
+.slider-pager{
+	height: 20px;
+	bottom: 5px;
+}

@@ -1,4 +1,12 @@
 {
   "name": "leaf",
-  "app_id": "89e0fb55"
+  "app_id": "89e0fb55",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
 }
