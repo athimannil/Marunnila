@@ -13,12 +13,13 @@
       </ion-slide>
     </ion-slide-box>
 
-    <div class="card">
+    <div class="card" ng-if="leaf.ml_names.length > 1">
       <div class="item item-text-wrap">
         <h2 class="list-title">മറ്റ് പേരുകൾ</h2>
         <hr>
         <span ng-repeat="mlName in leaf.ml_names" ng-if="!$first">
-        {{mlName}}, 
+          <span ng-if="!$last">{{mlName}}, </span>
+          <span ng-if="$last">{{mlName}}</span>
         </span>
       </div>
     </div>
@@ -31,12 +32,13 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card" ng-if="leaf.en_names.length">
       <div class="item item-text-wrap">
         <h2 class="list-title">ഇംഗ്ലീഷ് പേരുകൾ</h2>
         <hr>
         <span ng-repeat="enName in leaf.en_names">
-        {{enName}}, 
+          <span ng-if="!$last">{{enName}}, </span>
+          <span ng-if="$last">{{enName}}</span>
         </span>
       </div>
     </div>
