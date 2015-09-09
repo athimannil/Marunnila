@@ -12,3 +12,7 @@ h2.list-title{
 	color: #BABABA;
 	font-weight: 600;
 }
+.slider-pager{
+	height: 20px;
+	bottom: 5px;
+}
