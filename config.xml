@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.ionicframework.leaf662434" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>leaf</name>
+  <name>മരുന്നില</name>
   <description>
-        An Ionic Framework and Cordova project.
-    </description>
-  <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Muhammed Athimannil
-    </author>
+    A complelte database of plants
+  </description>
+  <author email="hi@ionicframework" href="http://www.athimannil.com/">
+    Muhammed Athimannil
+  </author>
   <content src="index.html"/>
   <access origin="*"/>
   <preference name="webviewbounce" value="false"/>
