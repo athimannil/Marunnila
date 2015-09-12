@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.leaf662434" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="marunnila" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>മരുന്നില</name>
   <description>
     A complelte database of plants
   </description>
-  <author email="hi@ionicframework" href="http://www.athimannil.com/">
+  <author email="hello@athimannil.com" href="http://www.athimannil.com/">
     Muhammed Athimannil
   </author>
   <content src="index.html"/>
