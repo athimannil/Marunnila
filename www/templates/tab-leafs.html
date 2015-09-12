@@ -1,5 +1,5 @@
 <ion-view view-title="മരുന്നില">
-  <ion-content>
+  <ion-content ng-controller="leafsCtrl">
 
 <div class="bar bar-header item-input-inset">
   <label class="item-input-wrapper">
@@ -11,7 +11,7 @@
     <ion-list>
       <ion-item 
         class="item-remove-animate item-avatar item-icon-right" 
-        ng-repeat="leaf in leafs | orderBy: '-id' | filter: filterName" 
+        ng-repeat="leaf in leafs | filter:searchFilter" 
         type="item-text-wrap" 
         href="#/tab/leafs/{{leaf.id}}"
       >

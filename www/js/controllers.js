@@ -17,8 +17,14 @@ angular.module('starter.controllers', [])
   //});
 
   $scope.leafs = leafs.all();
+  /*
   $scope.remove = function(leaf) {
     leafs.remove(leaf);
+  };
+  */
+  $scope.searchFilter = function(obj) {
+    var re = new RegExp($scope.filterName, 'i');
+    return !$scope.filterName || re.test(obj.botanical_name) || re.test(obj.en_names) || re.test(obj.ml_names);
   };
 })
 

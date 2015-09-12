@@ -56,8 +56,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/leafs',
       views: {
         'tab-leafs': {
-          templateUrl: 'templates/tab-leafs.html',
-          controller: 'leafsCtrl'
+          templateUrl: 'templates/tab-leafs.html'
+          // controller: 'leafsCtrl'
         }
       }
     })
