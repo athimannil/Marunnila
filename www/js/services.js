@@ -32,7 +32,7 @@ angular.module('starter.services', [])
     }, {
       id: 3,
       botanical_name: 'terminalia chebula',
-      en_names: 'chebulic myrobalan',
+      en_names: ['chebulic myrobalan'],
       en_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere doloribus maiores quod recusandae laborum odit cum, dignissimos possimus aliquid id veniam tempore autem dolores ullam voluptas! Saepe aut iure pariatur!',
       ml_names: ['കടുക്ക'],
       ml_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere doloribus maiores quod recusandae laborum odit cum, dignissimos possimus aliquid id veniam tempore autem dolores ullam voluptas! Saepe aut iure pariatur!',
