@@ -57,6 +57,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
+  .state('tab.favorite', {
+    url: '/favorite',
+    views: {
+      'tab-favorite': {
+        templateUrl: 'templates/tab-favorite.html',
+        controller: 'aboutCtrl'
+      }
+    }
+  })
+
   .state('tab.leafs', {
       url: '/leafs',
       views: {

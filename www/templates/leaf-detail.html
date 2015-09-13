@@ -5,8 +5,19 @@
   The Friends service returns an array of friend data
 -->
 <ion-view view-title="{{leaf.ml_names[0]}}">
-  <ion-content>
 
+  <ion-nav-bar class="bar-positive">
+    <ion-nav-back-button class="button button-clear">
+      <i class="icon ion-ios-arrow-back"></i> മരുന്നിലകൾ
+    </ion-nav-back-button>
+    <ion-nav-buttons side="right" class="button">
+      <button class="button button-clear">
+        <i class="icon ion-ios-star-outline"></i>
+      </button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+
+  <ion-content>
     <ion-slide-box does-continue="true">
       <ion-slide ng-repeat="slide in leaf.slides">
         <img src="./img/{{leaf.botanical_name}}/{{slide}}" alt="{{leaf.name}}">
