@@ -30,14 +30,18 @@ angular.module('starter.controllers', [])
 
 .controller('leafDetailCtrl', function($scope, $stateParams, leafs) {
   $scope.leaf = leafs.get($stateParams.leafId);
+  $scope.yesFav = false;
+  var movies = [2, 4, 7];
+  $scope.isFav = function(id){
+    if(movies.indexOf(id) != -1){
+      $scope.yesFav = true;
+    }
+  };
 })
 
 .controller('donateCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true,
-    languages: [
-      { name: 'Malayalam', value: 'ml'},
-      { name: 'English', value: 'en'}
-    ]
-  };
+})
+
+.controller('favCtrl', function($scope, leafs) {
+  $scope.leafs = leafs.all();
 });
