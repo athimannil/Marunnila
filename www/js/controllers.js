@@ -57,21 +57,17 @@ angular.module('starter.controllers', [])
   }
 
   $scope.addtofav = function(itemId){
-
-    var bank = myfavs.indexOf(itemId);
-    console.log(bank);
-
-    // localStorage.setItem('names_length', myfavs.length);
     if(checkExist(itemId)){
       // Delete from favlist
-      myfavs.splice(bank, 1);
+      var existItem = myfavs.indexOf(itemId);
+      myfavs.splice(existItem, 1);
       localStorage.setItem("savedFav", JSON.stringify(myfavs));
       $scope.yesFav = false;
     }else{
-    // var savedfav = [2, 4, 7];
-    // storing our array as a string
-
-      console.log("Not yet favorited");
+      // Add to fav
+      myfavs.push(itemId);
+      localStorage.setItem("savedFav", JSON.stringify(myfavs));
+      $scope.yesFav = true;
     }
   };
 })
