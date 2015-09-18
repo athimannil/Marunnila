@@ -156,6 +156,7 @@ angular.module('starter.services', [])
       return leafs;
     },
     remove: function(leaf) {
+      // console.log(leaf);
       leafs.splice(leafs.indexOf(leaf), 1);
     },
     get: function(leafId) {
@@ -167,4 +168,35 @@ angular.module('starter.services', [])
       return null;
     }
   };
+})
+
+
+.factory('myfavs', function() {
+  // Some fake testing data
+  // our array
+  var savedfav = [2, 4, 7];
+  // storing our array as a string
+  localStorage.setItem("savedFav", JSON.stringify(savedfav));
+
+  var retrievedData = localStorage.getItem("savedFav");
+  var myfavs = JSON.parse(retrievedData);
+  // $scope.favlist = myfavs;
+
+  return {
+    all: function() {
+      return myfavs;
+    },
+    remove: function(myfav) {
+      myfavs.splice(myfavs.indexOf(myfav), 1);
+    },
+    get: function(leafId) {
+      for (var i = 0; i < myfavs.length; i++) {
+        if (myfavs[i].id === parseInt(leafId)) {
+          return myfavs[i];
+        }
+      }
+      return null;
+    }
+  };
 });
+

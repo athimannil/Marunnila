@@ -20,11 +20,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       // org.apache.cordova.statusbar required
       StatusBar.styleLightContent();
     }
-    if (typeof analytics !== "undefined") {
-      analytics.startTrackerWithId("UA-18634542-18");
-    }else{
-      console.log("google analytics not working");
-    }
   });
 })
 
@@ -37,11 +32,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   $stateProvider
 
   // setup an abstract state for the tabs directive
-    .state('tab', {
+  .state('tab', {
     url: '/tab',
     abstract: true,
     templateUrl: 'templates/tabs.html',
-
     controller: 'homeCtrl'
   })
 

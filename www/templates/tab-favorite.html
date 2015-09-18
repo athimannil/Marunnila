@@ -1,7 +1,25 @@
-<ion-view view-title="Account">
+<ion-view view-title="ഇഷ്ടപ്പെട്ടവ" ng-init="loadFromFav()">
   <ion-content>
 
-	<pre>{{leafs | json}}</pre>
+
+    <ion-list>
+      <ion-item 
+        class="item-remove-animate item-avatar item-icon-right" 
+        ng-repeat='leaf in leafs | filterFav:myfavs:"id"'
+        type="item-text-wrap" 
+        href="#/tab/leafs/{{leaf.id}}"
+      >
+        <img ng-src="img/{{leaf.botanical_name}}/{{leaf.slides[0]}}">
+        <h2 class="padding">{{leaf.ml_names[0]}}</h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+        
+        <ion-option-button class="button-assertive" ng-click="remove(leaf)">
+          Delete
+        </ion-option-button>
+        
+      </ion-item>
+    </ion-list>
+
 
   </ion-content>
 </ion-view>
