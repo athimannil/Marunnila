@@ -147,15 +147,6 @@ angular.module('starter.services', [])
       ml_names: ['കിരിയാത്ത്', 'നിലവേപ്പ്'],
       ml_description: '',
       slides: ['01.jpg', '02.jpg']    
-    }, {
-      id: 18,
-      botanical_name: 'sd paniculata',
-      en_names: ['green ds', 'creat', 'king of bitters', 'andrographis', 'india echinacea'],
-      en_description:'',
-      ml_names: ['d', 'നിലവേപ്പ്'],
-      ml_description: '',
-      slides: ['01.jpg', '02.jpg']
-
     }
   ];
 
@@ -179,17 +170,17 @@ angular.module('starter.services', [])
   };
 })
 
-
 .factory('myfavs', function() {
-  // Some fake testing data
-  // our array
-  var savedfav = [2, 4, 7];
-  // storing our array as a string
-  localStorage.setItem("savedFav", JSON.stringify(savedfav));
+  var myfavs;
+  if (localStorage.getItem("savedFav") === null) {
+    var emptyFav = [];
+    localStorage.setItem("savedFav", JSON.stringify(emptyFav));
+    myfavs = JSON.parse(localStorage.getItem("savedFav"));
+  }else{
+    var retrievedData = localStorage.getItem("savedFav");
+    myfavs = JSON.parse(retrievedData);
+  }
 
-  var retrievedData = localStorage.getItem("savedFav");
-  var myfavs = JSON.parse(retrievedData);
-  // $scope.favlist = myfavs;
 
   return {
     all: function() {
@@ -197,6 +188,11 @@ angular.module('starter.services', [])
     },
     remove: function(myfav) {
       myfavs.splice(myfavs.indexOf(myfav), 1);
+      localStorage.setItem("savedFav", JSON.stringify(myfavs));
+    },
+    add: function(newFav) {
+      myfavs.push(newFav);
+      localStorage.setItem("savedFav", JSON.stringify(myfavs));
     },
     get: function(leafId) {
       for (var i = 0; i < myfavs.length; i++) {
