@@ -146,7 +146,16 @@ angular.module('starter.services', [])
       en_description:'',
       ml_names: ['കിരിയാത്ത്', 'നിലവേപ്പ്'],
       ml_description: '',
+      slides: ['01.jpg', '02.jpg']    
+    }, {
+      id: 18,
+      botanical_name: 'sd paniculata',
+      en_names: ['green ds', 'creat', 'king of bitters', 'andrographis', 'india echinacea'],
+      en_description:'',
+      ml_names: ['d', 'നിലവേപ്പ്'],
+      ml_description: '',
       slides: ['01.jpg', '02.jpg']
+
     }
   ];
 
