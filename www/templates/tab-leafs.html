@@ -11,7 +11,9 @@
     <ion-list>
       <ion-item 
         class="item-remove-animate item-avatar item-icon-right" 
-        ng-repeat="leaf in leafs | filter:searchFilter" 
+        ng-repeat="leaf in leafs 
+        | orderBy: '-id' 
+        | filter:searchFilter" 
         type="item-text-wrap" 
         href="#/tab/leafs/{{leaf.id}}"
       >
