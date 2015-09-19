@@ -1,0 +1,52 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="{{leaf.ml_names[0]}}"  ng-init="isFav(leaf.id)">
+  <ion-nav-buttons side="right">
+    <button class="button button-clear" ng-click="addtofav(leaf.id)">
+      <i class="icon" ng-class="yesFav ? 'ion-ios-star' : 'ion-ios-star-outline'"></i>
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content>
+    <ion-slide-box does-continue="true">
+      <ion-slide ng-repeat="slide in leaf.slides">
+        <img src="./img/{{leaf.botanical_name}}/{{slide}}" alt="{{leaf.name}}">
+      </ion-slide>
+    </ion-slide-box>
+
+    <div class="card" ng-if="leaf.ml_names.length > 1">
+      <div class="item item-text-wrap">
+        <h2 class="list-title">മറ്റ് പേരുകൾ</h2>
+        <hr>
+        <span ng-repeat="mlName in leaf.ml_names" ng-if="!$first">
+          <span ng-if="!$last">{{mlName}}, </span>
+          <span ng-if="$last">{{mlName}}</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="item item-text-wrap">
+        <h2 class="list-title">ശാസ്ത്രീയ നാമം</h2>
+        <hr>
+        {{leaf.botanical_name}}
+      </div>
+    </div>
+
+    <div class="card" ng-if="leaf.en_names.length">
+      <div class="item item-text-wrap">
+        <h2 class="list-title">ഇംഗ്ലീഷ് പേരുകൾ</h2>
+        <hr>
+        <span ng-repeat="enName in leaf.en_names">
+          <span ng-if="!$last">{{enName}}, </span>
+          <span ng-if="$last">{{enName}}</span>
+        </span>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>
