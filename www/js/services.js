@@ -147,6 +147,14 @@ angular.module('starter.services', [])
       ml_names: ['കിരിയാത്ത്', 'നിലവേപ്പ്'],
       ml_description: '',
       slides: ['01.jpg', '02.jpg']    
+    }, {
+      id: 18,
+      botanical_name: 'desmodium triflorum',
+      en_names: [''],
+      en_description:'',
+      ml_names: ['നിലന്പരണ്ട', 'അസ്ഥിസംഹാരി'],
+      ml_description: '',
+      slides: ['01.jpg', '02.jpg']    
     }
   ];
 
