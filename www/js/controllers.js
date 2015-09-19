@@ -58,7 +58,6 @@ angular.module('starter.controllers', [])
 .controller('favCtrl', function($scope, leafs, myfavs) {
   $scope.leafs = leafs.all();
   $scope.myfavs = myfavs.all();
-  console.log("kooy");
   $scope.removefav = function(thisFav){
     myfavs.remove(thisFav);
   };
