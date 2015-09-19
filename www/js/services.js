@@ -150,11 +150,11 @@ angular.module('starter.services', [])
     }, {
       id: 18,
       botanical_name: 'desmodium triflorum',
-      en_names: [''],
+      en_names: [],
       en_description:'',
       ml_names: ['നിലന്പരണ്ട', 'അസ്ഥിസംഹാരി'],
       ml_description: '',
-      slides: ['01.jpg', '02.jpg']    
+      slides: ['01.jpg', '02.jpg', '03.jpg']
     }
   ];
 
