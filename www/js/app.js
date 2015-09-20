@@ -60,6 +60,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
+    .state('tab.fav-detail', {
+      url: '/favorite/:leafId',
+      views: {
+        'tab-favorite': {
+          templateUrl: 'templates/fav-detail.html',
+          controller: 'favDetailCtrl'
+        }
+      }
+    })
 
   .state('tab.leafs', {
       url: '/leafs',

@@ -11,18 +11,15 @@
     <ion-list>
       <ion-item 
         class="item-remove-animate item-avatar item-icon-right" 
-        ng-repeat="leaf in leafs | filter:searchFilter" 
+        ng-repeat="leaf in leafs 
+        | orderBy: '-id' 
+        | filter:searchFilter" 
         type="item-text-wrap" 
         href="#/tab/leafs/{{leaf.id}}"
       >
         <img ng-src="img/{{leaf.botanical_name}}/{{leaf.slides[0]}}">
         <h2 class="padding">{{leaf.ml_names[0]}}</h2>
         <i class="icon ion-chevron-right icon-accessory"></i>
-        
-        <ion-option-button class="button-assertive" ng-click="remove(leaf)">
-          Delete
-        </ion-option-button>
-        
       </ion-item>
     </ion-list>
   </ion-content>

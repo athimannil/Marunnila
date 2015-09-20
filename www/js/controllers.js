@@ -58,9 +58,34 @@ angular.module('starter.controllers', [])
 .controller('favCtrl', function($scope, leafs, myfavs) {
   $scope.leafs = leafs.all();
   $scope.myfavs = myfavs.all();
-  console.log("kooy");
   $scope.removefav = function(thisFav){
     myfavs.remove(thisFav);
+  };
+})
+.controller('favDetailCtrl', function($scope, $stateParams, leafs, myfavs) {
+  $scope.leaf = leafs.get($stateParams.leafId);
+  $scope.myfavs = myfavs.all();
+  $scope.yesFav = false;
+  $scope.isFav = function(thisFav){
+    if(checkExist(thisFav)){
+      $scope.yesFav = true;
+    }
+  };
+  function checkExist(thisFav) {
+    if($scope.myfavs.indexOf(thisFav) != -1){
+      return true;
+    }else{
+      return false;
+    }
+  }
+  $scope.addtofav = function(thisFav){
+    if(checkExist(thisFav)){
+      myfavs.remove(thisFav);
+      $scope.yesFav = false;
+    }else{
+      myfavs.add(thisFav);
+      $scope.yesFav = true;
+    }
   };
 })
 
