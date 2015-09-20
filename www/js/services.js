@@ -166,7 +166,7 @@ angular.module('starter.services', [])
     }, {
       id: 20,
       botanical_name: 'acaypha Indica',
-      en_names: ['Acaypha Indica'],
+      en_names: ['acaypha Indica'],
       en_description: '',
       ml_names: ['കുപ്പമേനി', 'പൂച്ചമയക്കി'],
       ml_description: 'അരിഷ്ടമഞ്ജരി, ഹരിതമഞ്ജരി എന്നീ സംസ്കൃതനാമത്തില്‍ അറിയപ്പെടുന്ന ഈ സസ്യം ഇന്ത്യയിൽ എല്ലായിടത്തും കാണപ്പെടുന്ന ഒരു ഏകവാർഷിക ഔഷധസസ്യമാണ്. സമതലപ്രദേശങ്ങളിൽ കൂടുതലായി കാണപ്പെടുന്ന ഇതിന് ഏകദേശം ഒരു മീറ്റർ വരെ പൊക്കമുണ്ടാകും. ധാരാളം ഇലകൾ കാണപ്പെടുന്ന ഈ ചെടി ശാഖോപശാഖകളായി വളരുന്നു. ദീർഘവൃത്താകാരത്തിലോ വൃത്താകാരത്തിലോ കാണപ്പെടുന്ന ഇതിന്റെ ഇലകളുടെ പുറം ഭാഗം മിനുസമാർന്നതാണ്. പൂക്കൾ പച്ചനിറത്തിലുള്ളവയും കായ്കൾ വെള്ളനിറത്തിലുള്ളവയുമാണ്. കായ്കളിൽ അനേകം ചെറിയ വിത്തുകൾ അടങ്ങിയിരിക്കുന്നു.',
@@ -174,7 +174,7 @@ angular.module('starter.services', [])
     }, {
       id: 21,
       botanical_name: 'biophytum reinwardtii',
-      en_names: ['Biophytum reinwardtii'],
+      en_names: ['biophytum reinwardtii'],
       en_description: '',
       ml_names: ['മുക്കുറ്റി', 'നിലംതെങ്ങ് ','തീണ്ടാനാഴി'],
       ml_description: 'ക്രിതാഞ്ജലി, പീതപുഷ്പം എന്നീ സംസ്കൃതനാമത്തില്‍ അറിയപ്പെടുന്ന തെങ്ങിന്റെ വളരെ ചെറിയ പതിപ്പ് പോലെ തോന്നിക്കുന്ന ഈ സസ്യം ജലം കെട്ടിനിൽക്കാത്ത തണൽ‌പ്രദേശങ്ങളിൽ വളരുന്നു. ഒരു കൊല്ലമാണ് മുക്കുറ്റിയുടെ ആയുസ്സ്. 8 മുതൽ 15 സെ.മീ. വരെ സാധാരണ ഉയരമുള്ള ഇവയ്ക്ക്  മഞ്ഞ നിറത്തിലുള്ള പൂക്കളും ഇലകളുടെ മുകൾ ഭാഗം കടും പച്ചയും അടിഭാഗം വിളറിയ പച്ചനിറവുമാണ്. തൊട്ടാവാടിയുടെ അത്ര വേഗത്തിലില്ലങ്കിലും തൊടുമ്പോൾ ഇലകൾ വാടുന്ന സ്വഭാവം മുക്കുറ്റിക്കുമുണ്ട്. രാത്രിയിൽ ഇവയുടെ ഇലകൾ കൂമ്പിയിരിക്കും. ഇതിന്റെ വിത്തുകൾ മണ്ണിൽ വീണ് തൊട്ടടുത്ത മഴക്കാലത്ത് മുളക്കുന്നു',
@@ -200,17 +200,16 @@ angular.module('starter.services', [])
   };
 })
 
-
 .factory('myfavs', function() {
-  // Some fake testing data
-  // our array
-  var savedfav = [2, 4, 7];
-  // storing our array as a string
-  localStorage.setItem("savedFav", JSON.stringify(savedfav));
-
-  var retrievedData = localStorage.getItem("savedFav");
-  var myfavs = JSON.parse(retrievedData);
-  // $scope.favlist = myfavs;
+  var myfavs;
+  if (localStorage.getItem("savedFav") === null) {
+    var emptyFav = [];
+    localStorage.setItem("savedFav", JSON.stringify(emptyFav));
+    myfavs = JSON.parse(localStorage.getItem("savedFav"));
+  }else{
+    var retrievedData = localStorage.getItem("savedFav");
+    myfavs = JSON.parse(retrievedData);
+  }
 
   return {
     all: function() {
@@ -218,6 +217,11 @@ angular.module('starter.services', [])
     },
     remove: function(myfav) {
       myfavs.splice(myfavs.indexOf(myfav), 1);
+      localStorage.setItem("savedFav", JSON.stringify(myfavs));
+    },
+    add: function(newFav) {
+      myfavs.push(newFav);
+      localStorage.setItem("savedFav", JSON.stringify(myfavs));
     },
     get: function(leafId) {
       for (var i = 0; i < myfavs.length; i++) {
@@ -229,4 +233,3 @@ angular.module('starter.services', [])
     }
   };
 });
-
