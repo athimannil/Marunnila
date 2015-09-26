@@ -14,7 +14,7 @@ angular.module('starter.services', [])
     }, {
       id: 1,
       botanical_name: 'ocimum tenuiflorum',
-      en_names: ['mint'],
+      en_names: ['ocimum sanctum'],
       en_description:'',
       ml_names: ['തുളസി'],
       ml_description: '',
@@ -157,16 +157,16 @@ angular.module('starter.services', [])
       slides: ['01.jpg', '02.jpg', '03.jpg']
     }, {
       id: 19,
-      botanical_name: 'centella Asiatica',
-      en_names: ['Centella Asiatica'],
+      botanical_name: 'centella asiatica',
+      en_names: ['centella', 'gotu kola'],
       en_description: '',
       ml_names: ['മുത്തിള്‍', 'കുടങ്ങല്‍', 'കൊടുങ്ങല്‍', 'കുടകന്‍', 'സ്ഥലബ്രഹ്മി'],
       ml_description: 'മണ്ഡൂകപർണ്ണി എന്ന് സംസ്കൃതത്തിൽ അറിയപ്പെടുന്ന ഈ സസ്യം ചതുപ്പുപ്രദേശങ്ങളിലോ നല്ല ജലാംശം ലഭിക്കുന്ന പ്രദേശങ്ങളിലോ‍ വളരുന്നു. നിലത്ത് പറ്റി വളരുന്ന ഇതിന്റെ ഇലക്ക് തലച്ചോറിന്റെ ആകൃതിയാണുള്ളത്. തണ്ട്, ഇല, വേര്‌ എന്നിവയാണ്‌ ഔഷധത്തിന്‌ ഉപയോഗിക്കുന്നത്.',
       slides: ['01.jpg', '02.jpg', '03.jpg']
     }, {
       id: 20,
-      botanical_name: 'acaypha Indica',
-      en_names: ['acaypha Indica'],
+      botanical_name: 'acalypha indica',
+      en_names: ['indian acalypha', 'indian nettle', 'three-seeded mercury'],
       en_description: '',
       ml_names: ['കുപ്പമേനി', 'പൂച്ചമയക്കി'],
       ml_description: 'അരിഷ്ടമഞ്ജരി, ഹരിതമഞ്ജരി എന്നീ സംസ്കൃതനാമത്തില്‍ അറിയപ്പെടുന്ന ഈ സസ്യം ഇന്ത്യയിൽ എല്ലായിടത്തും കാണപ്പെടുന്ന ഒരു ഏകവാർഷിക ഔഷധസസ്യമാണ്. സമതലപ്രദേശങ്ങളിൽ കൂടുതലായി കാണപ്പെടുന്ന ഇതിന് ഏകദേശം ഒരു മീറ്റർ വരെ പൊക്കമുണ്ടാകും. ധാരാളം ഇലകൾ കാണപ്പെടുന്ന ഈ ചെടി ശാഖോപശാഖകളായി വളരുന്നു. ദീർഘവൃത്താകാരത്തിലോ വൃത്താകാരത്തിലോ കാണപ്പെടുന്ന ഇതിന്റെ ഇലകളുടെ പുറം ഭാഗം മിനുസമാർന്നതാണ്. പൂക്കൾ പച്ചനിറത്തിലുള്ളവയും കായ്കൾ വെള്ളനിറത്തിലുള്ളവയുമാണ്. കായ്കളിൽ അനേകം ചെറിയ വിത്തുകൾ അടങ്ങിയിരിക്കുന്നു.',
@@ -181,8 +181,8 @@ angular.module('starter.services', [])
       slides: ['01.jpg', '02.jpg', '03.jpg']
    }, {
     id: 22,
-      botanical_name: 'Bacopa monnieri',
-      en_names: ['Bacopa monnieri'],
+      botanical_name: 'bacopa monnieri',
+      en_names: ['bacopa monnieri'],
       en_description: '',
       ml_names: ['ബ്രഹ്മി' ],
       ml_description: 'ത്രായന്തി, ശീതകാമിനി  എന്നീ സംസ്കൃതനാമത്തില്‍ അറിയപ്പെടുന്ന ഒരു ആയുർവേദ ഔഷധസസ്യമാണ്‌ ബ്രഹ്മി, പാടങ്ങളിലും അതുപോലെ നനവുകൂടുതലുള്ള പ്രദേശങ്ങളിലുമാണ് ബ്രഹ്മി ധാരാളമായി വളരുന്നത്, എട്ടു മില്ലീമീറ്റർ വരെ വ്യാസം വരുന്ന പൂക്കൾക്ക് വിളർത്ത നീലയോ വെള്ളയോ നിറമായിരിക്കും. സമുദ്ര നിരപ്പിൽ നിന്ന് 1200 മീറ്റർ വരെ ഉയർന്ന പ്രദേശങ്ങളിൽ ബ്രഹ്മി കാണപ്പെടുന്നു. നമ്മുടെ നാട്ടിൽ ധാരാളമായി കൃഷി ചെയ്യപ്പെടുന്ന സസ്യങ്ങളിലൊന്നാണിത്',
